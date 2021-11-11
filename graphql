@@ -1,0 +1,25 @@
+HOW TO START
+
+npm i
+    @nestjs/graphql
+    graphql-tools
+    graphql
+    apollo-server-express
+
+(support)
+npm i 
+    class-validator
+    uuid
+
+
+app.module.ts
+
+    import { GraphQLModule } from '@nestjs/graphql';
+
+    @Module({
+        imports: [
+            GraphQLModule.forRoot({
+                autoSchemaFile: true
+            })
+        ]
+    })
